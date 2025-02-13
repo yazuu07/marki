@@ -78,6 +78,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <link rel="stylesheet" href="d1login.css">
 </head>
 <body>
+    <div class="login-container">
     <form action="login.php" method="post">
         <label for="username">Username or Email:</label>
         <input type="text" name="user" id="username" required><br> 
@@ -87,7 +88,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         <button type="submit">Login</button>
         <p>No Account? <a href="registration.php">Register Now</a></p>
     </form>
-
+    </div>
     <?php if (isset($_GET['error'])): ?>
         <p style="color: red;">
             <?php
